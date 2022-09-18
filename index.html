@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <script src="animasyon.js"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToTheList</title>
+    <style>
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-sm">
+        <div class="top border w-50 mx-auto mb-3 rounded" style="background-color: rgb(219, 219, 219);">
+            <header class="display-6 lead mb-3 strong">Yapılacaklar Listesi</header>
+            <div class="input-group mb-3 ">
+                <input type="text" class="form-control" placeholder="Yeni Görev Giriniz" aria-label="Recipient's username" aria-describedby="button-addon2" id="input">
+                <button class="tex btn btn-outline-secondary bg-success text-light border" type="button" id="listAdd">+</button>
+            </div>
+        </div>
+        <div class="bottom border w-50 mx-auto mb-3 rounded" style="background-color: rgb(219, 219, 219);">
+            <div class="challenge d-flex justify-content-between flex-column">
+                <div class="d-flex justify-content-between p-2">
+                    <strong class="h4 mx-2">GÖREV LİSTESİ</strong>
+                    <button type="button" class="btn btn-danger float-right" id="clear">Listeyi Temizle</button>
+                </div>
+                <div class="list p-4 d-flex flex-column" id="alert_list">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
